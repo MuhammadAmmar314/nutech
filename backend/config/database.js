@@ -1,6 +1,9 @@
+import * as dotenv from 'dotenv';
+dotenv.config();
+
 import { Sequelize } from "sequelize";
 
-const db = new Sequelize('db_nutech', 'r5m1vuz4jfrbb6jdb0xu', 'pscale_pw_L7KwinP9UqliPmQsjuoxalG3PiBeDWRGQNaSaSFQFcZ',{
+const db = new Sequelize('db_nutech', '9r7yudm16p3fv8uj6fem', 'pscale_pw_TIGkn9KTBxE4sJHaKf0ggnclGfxu2lmktqFiYQVAkUm',{
     host : 'aws.connect.psdb.cloud',
     dialect : 'mysql',
     dialectOptions:{
