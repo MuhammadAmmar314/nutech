@@ -3,7 +3,7 @@ dotenv.config();
 
 import { Sequelize } from "sequelize";
 
-const db = new Sequelize('db_nutech', '9r7yudm16p3fv8uj6fem', 'pscale_pw_TIGkn9KTBxE4sJHaKf0ggnclGfxu2lmktqFiYQVAkUm',{
+const db = new Sequelize('db_nutech', 'iv18e5ke5aqpq5sj16tw', 'pscale_pw_hnjvoImX02OPntuQz51ITmCNmCkp6d5Utf0R7dt41Jl',{
     host : 'aws.connect.psdb.cloud',
     dialect : 'mysql',
     dialectOptions:{
