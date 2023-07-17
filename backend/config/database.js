@@ -3,8 +3,8 @@ dotenv.config();
 
 import { Sequelize } from "sequelize";
 
-const db = new Sequelize(process.env.database, process.env.username, process.env.password,{
-    host : process.env.host,
+const db = new Sequelize(db_nutech, process.env.DATABASE_USERNAME, process.env.DATABASE_PASSWORD,{
+    host : process.env.DATABASE_HOST,
     dialect : 'mysql',
     dialectOptions:{
         ssl: {
