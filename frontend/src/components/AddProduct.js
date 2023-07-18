@@ -26,7 +26,7 @@ const AddProduct = () => {
         formData.append("sell_price", sell_price);
         formData.append("stock", stock);
         try {
-            await axios.post("https://aws.connect.psdb.cloud:5000/products", formData, {
+            await axios.post("http://localhost:5000/products", formData, {
                 headers: {
                     "Content-type" : "multipart/form-data"
                 }

@@ -17,7 +17,7 @@ const EditProduct = () => {
     }, []);
 
     const getProductById = async()=>{
-        const response = await axios.get(`https://aws.connect.psdb.cloud:5000/products/${id}`);
+        const response = await axios.get(`http://localhost:5000/products/${id}`);
         setProduct_image(response.data.product_image);
         setPreview(response.data.url);
         setProduct_name(response.data.product_name);
@@ -41,7 +41,7 @@ const EditProduct = () => {
         formData.append("sell_price", sell_price);
         formData.append("stock", stock);
         try {
-            await axios.patch(`https://aws.connect.psdb.cloud:5000/products/${id}`, formData, {
+            await axios.patch(`http://localhost:5000/products/${id}`, formData, {
                 headers: {
                     "Content-type" : "multipart/form-data"
                 }

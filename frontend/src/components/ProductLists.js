@@ -11,13 +11,13 @@ const ProductLists = () => {
     },[]);
 
     const getProducts = async() =>{
-        const response = await axios.get("https://aws.connect.psdb.cloud:5000/products");
+        const response = await axios.get("http://localhost:5000/products");
         setProducts(response.data);
     }
     
     const deleteProduct = async(productId)=>{
         try {
-            await axios.delete(`https://aws.connect.psdb.cloud:5000/products/${productId}`);
+            await axios.delete(`http://localhost:5000/products/${productId}`);
             getProducts();
         } catch (error) {
             console.log(error);
